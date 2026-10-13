@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>pošli mail</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZHR_DPO_MAILTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZHR_DPO_MAIL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_HR_DPO_MAIL</FUNCNAME>
+     <SHORT_TEXT>BWA - send mail</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_SUBJECT</PARAMETER>
+       <DEFAULT>&apos;BWA robot&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SO_OBJ_DES</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>X_COMMIT</PARAMETER>
+       <DEFAULT>&apos; &apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>XFELD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_SENDER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>XUBNAME</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_EMAIL</PARAMETER>
+       <DBSTRUCT>ZIBWA_SMTP</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_CONTENT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SOLI_TAB</TYP>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_SUBJECT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Krátký popis obsahu</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>X_COMMIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Pole k zakřížkování</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_SENDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Uživatel</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_EMAIL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IBWA - struktura pro mail</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_CONTENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>objcont a objhead jako typ tabulky</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_Z_HR_DPO_MAIL>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>Z_HR_DPO_MAIL</OBJECT>
+      <LANGU>C</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00002</TXTLINES>
+      <DOKSTATE>R</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>Z_HR_DPO_MAIL</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>C</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Modul pro odesílání emailů. Vytvořeno kopií z Z_IBWA_MAIL.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Doplněn nepovinný parametr I_SENDER, který je upřednostněn před sy-uname</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_Z_HR_DPO_MAIL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20230422.1.42_SAP" APIVersion="3.6.23111.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2024-05-20T11:23:41Z" uuid="bf21c3bb-f21e-49a8-a31e-f9edf707b535">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.0/">
+   <?formServer defaultPDFRenderFormat acrobat9.1dynamic?>
+   <?formServer allowRenderCaching 1?>
+   <?formServer formModel both?>
+   <subform allowMacro="1" layout="tb" name="data">
+      <pageSet>
+         <pageArea id="Page1" name="MasterPage">
+            <medium long="297mm" orientation="landscape" short="210mm" stock="a4"/>
+            <contentArea h="192mm" name="ContentArea" w="282mm" x="8mm" y="8mm"/>
+            <field access="readOnly" h="7.5mm" id="floatingField000041" name="CurrentPage" presence="hidden" w="55mm" x="106.241mm" y="101.321mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Verdana"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="F0E38BBC-50A6-415F-A3A6-A965386B96E2">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField018467" name="PageCount" presence="hidden" w="55mm" x="106.241mm" y="101.321mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Verdana"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="1688AF67-EAAA-4182-AE8C-145797EB71E4">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <draw name="Pages" x="266mm" y="202mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="AD678CE6-CEE5-4BBD-ABE8-6B903294D907">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.0.0"><p style="text-decoration:none;letter-spacing:0in"><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> /<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font typeface="Verdana"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+            </draw>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 0?></pageSet>
+      <subform layout="tb" name="Page" w="280mm">
+         <bind match="none"/>
+         <occur max="-1"/>
+         <breakBefore startNew="1" targetType="pageArea">
+            <script contentType="application/x-javascript">this.index &gt; 0</script>
+         </breakBefore>
+         <event activity="docReady" name="event__docReady" ref="$host">
+            <script contentType="application/x-javascript">
+event.target.viewState = {overViewMode:5};
+</script>
+         </event>
+         <subform h="192mm" name="Subform1" w="281.999mm">
+            <bind match="none"/>
+            <border>
+               <edge presence="hidden"/>
+            </border>
+            <occur max="-1" min="0"/>
+            <bind match="dataRef" ref="$.DATA[*]"/>
+            <subform columnWidths="7.25mm 11.775mm 6.75mm 9.75mm 9.75mm 12.25mm 11mm 12.5mm 7mm 7.5mm 9.5mm 12mm 8mm 6mm 7.5mm 7.5mm 16mm 21mm 6mm 12mm 17mm 9.5mm 12mm 9mm 9mm 15mm 12mm" layout="table" name="Table2">
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden"/>
+               </border>
+               <subform layout="row" name="Header">
+                  <assist role="TH"/>
+                  <draw colSpan="15" h="5mm" name="orgzmena">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <text xliff:rid="181AB641-591D-459F-AE13-A0DBF72316AE">Organizační změna</text>
+                     </value>
+                     <font baselineShift="0pt" size="6pt" typeface="Verdana" weight="bold"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                  </draw>
+                  <draw colSpan="6" name="detailfm" usehref=".#som($template.#subform.designer__stylesheet.TextStyle1)">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <text xliff:rid="16630EE0-49B3-4BF0-8B2E-00DE3377EF80">Detailní informace k FM</text>
+                     </value>
+                     <border>
+                        <edge presence="hidden" stroke="solid" thickness="0.5pt">
+                           <color value="0,0,0"/>
+                        </edge>
+                        <edge presence="hidden" stroke="solid" thickness="0.5pt">
+                           <color value="0,0,0"/>
+                        </edge>
+                        <edge presence="hidden" stroke="solid" thickness="0.5pt">
+                           <color value="0,0,0"/>
+                        </edge>
+                        <edge presence="hidden" stroke="solid" thickness="0.5pt">
+                           <color value="0,0,0"/>
+                        </edge>
+                        <corner inverted="0" join="square" presence="hidden" radius="0in" stroke="solid" thickness="0.1778mm">
+                           <color value="0,0,0"/>
+                        </corner>
+                        <corner inverted="0" join="square" presence="hidden" radius="0in" stroke="solid" thickness="0.1778mm">
+                           <color value="0,0,0"/>
+                        </corner>
+                        <corner inverted="0" join="square" presence="hidden" radius="0in" stroke="solid" thickness="0.1778mm">
+                           <color value="0,0,0"/>
+                        </corner>
+                        <corner inverted="0" join="square" presence="hidden" radius="0in" stroke="solid" thickness="0.1778mm">
+                           <color value="0,0,0"/>
+                        </corner>
+                        <fill>
+                           <color value="153,153,153"/>
+                        </fill>
+                     </border>
+                     <font size="6pt"/>
+                  </draw>
+                  <draw colSpan="6" name="projsodb" usehref=".#som($template.#subform.designer__stylesheet.TextStyle1)">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <text xliff:rid="C1FE4961-40A9-41E5-8DB4-A03119260856">Projednání s odbory</text>
+                     </value>
+                     <border>
+                        <fill>
+                           <color value="0,128,0"/>
+                        </fill>
+                        <edge presence="hidden" stroke="solid" thickness="0.5pt">
+                           <color value="0,0,0"/>
+                        </edge>
+                        <edge presence="hidden" stroke="solid" thickness="0.5pt">
+                           <color value="0,0,0"/>
+                        </edge>
+                        <edge presence="hidden" stroke="solid" thickness="0.5pt">
+                           <color value="0,0,0"/>
+                        </edge>
+                        <edge presence="hidden" stroke="solid" thickness="0.5pt">
+                           <color value="0,0,0"/>
+                        </edge>
+                        <corner inverted="0" join="square" presence="hidden" radius="0in" stroke="solid" thickness="0.1778mm">
+                           <color value="0,0,0"/>
+                        </corner>
+                        <corner inverted="0" join="square" presence="hidden" radius="0in" stroke="solid" thickness="0.1778mm">
+                           <color value="0,0,0"/>
+                        </corner>
+                        <corner inverted="0" join="square" presence="hidden" radius="0in" stroke="solid" thickness="0.1778mm">
+                           <color value="0,0,0"/>
+                        </corner>
+                        <corner inverted="0" join="square" presence="hidden" radius="0in" stroke="solid" thickness="0.1778mm">
+                           <color value="0,0,0"/>
+                        </corner>
+                     </border>
+                     <font size="6pt"/>
+                  </draw>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="row" name="Header">
+                  <assist role="TH"/>
+                  <draw h="12mm" name="C01">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="FBD80B80-6118-4BBA-A8BF-649B5D25E645">Poř.číslo</text>
+                     </value>
+                  </draw>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <draw h="12mm" name="C02">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="4503625D-B3EF-40AD-A1F9-65DB19381533">Útvar</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C03">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="D87B9BE5-8B5F-4488-9900-EA5A9A7AC84F">Stř.</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C04">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="5CBC77D1-259A-4E4B-9B66-9240CB82AE31">FM</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C05">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="54DD269F-D7DB-4D47-9B01-5139B0F3D084">Kategorie místa</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C06">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="7BE1295A-5B47-4D27-AB12-A4A13637F970">Název pozice</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C07">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="7C487B71-2B67-4B57-8D58-64FC1713DEC1">Profese	</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C08">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="830B1119-DE71-49D4-8890-4B52324CF9B0">Jméno</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C09">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="5D8000D7-1929-4F2F-8F84-2D237B532F72">Os.č.</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C10">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="5FB60396-EBEF-45DB-BE8F-08FDB14629E4">Naroz.</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C11">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="96424B5C-114A-4794-91D1-9B8ABA8D155F">Nástup</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C12">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="FD858F31-C1C4-4FA0-895C-D2774C5A2AF3">Vzdělání</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C13">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="51A60615-A5EE-478C-A9AF-6B1AAE723716">Senior</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C14">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="2EF4FFDA-3651-4DE2-A59C-AFF885F9330A">ZP</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C15">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="1C597D4F-EE6F-430C-8450-66D140022E7E">Nárok na důchod</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C16">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="81CCB33B-9CF2-4E7A-993E-39D9059E987F">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.0.0"><p style="text-decoration:none;letter-spacing:0in">Návrh</p><p style="text-decoration:none;letter-spacing:0in">term.</p><p style="text-decoration:none;letter-spacing:0in">zrušení</p></body>
+                        </exData>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C17">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="298C9C84-4E71-4F8B-8BFB-882FBD4EF658">Řešení / návrh řešení</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C18">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="273CCE5C-93B1-4F36-B395-B2202DD69153">Činnosti</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C19">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="57D5D2C0-C2BF-4D0B-9C8B-AD39E74AB4D2">%</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C20">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="420C66D1-EB88-478C-89DE-0A362B69BC7C">Opatření</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C21">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="D3549BAB-D7B1-45D9-8814-9B815B1A0B18">Detail k opatření</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C22">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="701FBA76-678E-4A12-88E5-3DAF7424D52F">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.0.0"><p style="letter-spacing:0in">Zahájení projednání</p><p style="letter-spacing:0in">TERMÍN</p></body>
+                        </exData>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C23">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="6C8F9541-C5F4-405D-9779-BFBBFF8229F7">Doplňující informace - navazující jednání</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C24">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="0DDC845A-1E3F-46A6-8659-177338FB5A70">Stav projednání FM</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C25">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <text xliff:rid="AA639644-FB1B-4E9D-8222-425A6421134B">Návrh zrušení FM</text>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C26">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="C75A2F38-87B1-4DDC-8B55-46151E33DD56">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.0.0"><p style="text-decoration:none;letter-spacing:0in">Stav projednání</p><p style="text-decoration:none;letter-spacing:0in">Zaměstnanec</p><p style="text-decoration:none;letter-spacing:0in">ODSOUHLASENÉ</p><p style="text-decoration:none;letter-spacing:0in">ŘEŠENÍ</p></body>
+                        </exData>
+                     </value>
+                  </draw>
+                  <draw h="12mm" name="C27">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="4.5pt" typeface="Verdana" weight="bold"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge thickness="0.025mm"/>
+                        <corner thickness="0.025mm"/>
+                        <fill>
+                           <color value="192,192,192"/>
+                        </fill>
+                     </border>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="89B921C6-7171-4CC3-81E7-6F6C47BB2B37">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.0.0"><p style="text-decoration:none;letter-spacing:0in">Ukončení</p><p style="text-decoration:none;letter-spacing:0in">projednání</p></body>
+                        </exData>
+                     </value>
+                  </draw>
+                  <?templateDesigner expand 1?></subform>
+               <keep intact="contentArea"/>
+               <bind match="dataRef" ref="$.IT_ITEMS"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <subform layout="row" name="Data">
+                  <assist role="TR"/>
+                  <subform colSpan="-1" columnWidths="3mm 277mm" layout="table" name="TableData">
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <subform layout="row" name="ItemType">
+                        <assist role="TR"/>
+                        <field h="4.528mm" name="Cell1">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <font posture="italic" size="5pt" typeface="Verdana"/>
+                           <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                           <para hAlign="right" vAlign="middle"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden" thickness="0.1778mm"/>
+                           </border>
+                           <bind match="dataRef" ref="$.ITEM_TYPE_INDEX"/>
+                        </field>
+                        <field h="4.528mm" name="Cell2">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <font posture="italic" size="5pt" typeface="Verdana"/>
+                           <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                           <para vAlign="middle"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden" thickness="0.1778mm"/>
+                           </border>
+                           <bind match="dataRef" ref="$.ITEM_TYPE_TEXT"/>
+                        </field>
+                        <border>
+                           <edge presence="hidden"/>
+                        </border>
+                        <bind match="none"/>
+                        <occur max="-1" min="0"/>
+                        <?templateDesigner expand 1?></subform>
+                     <subform layout="row" name="Items">
+                        <assist role="TR"/>
+                        <subform colSpan="2" columnWidths="7.25mm 11.775mm 6.75mm 9.75mm 9.75mm 12.25mm 11mm 12.5mm 7mm 7.5mm 9.5mm 12mm 8mm 6mm 7.5mm 7.5mm 16mm 21mm 6mm 12mm 17mm 9.5mm 12mm 9mm 9mm 15mm 12mm" layout="table" name="TableItems">
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden"/>
+                           </border>
+                           <subform layout="row" name="Row1">
+                              <assist role="TR"/>
+                              <field minH="4.528mm" name="Cell1">
+                                 <ui>
+                                    <textEdit/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para hAlign="right" vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.ITEM_INDEX"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell2">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.UTVAR"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell3">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.STREDISKO"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell4">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.FM"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell5">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.KM"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell6">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.NAZEV_POZICE"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell7">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.PROFESE"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell8">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.JMENO_PRIJMENI"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell9">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.PERNR"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell10">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.NAROZENI"/>
+                                 <value>
+                                    <text xliff:rid="8AA88448-59A7-4639-85E2-DA1931FCBBE5">12.12.2022</text>
+                                 </value>
+                              </field>
+                              <field minH="4.528mm" name="Cell11">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.NASTUP"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell12">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.VZDELANI"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell13">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.SENIOR"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell14">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.ZP"/>
+                              </field>
+                              <field h="4.528mm" name="Cell15">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.NAROK_NA_DUCHOD"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell16">
+                                 <ui>
+                                    <dateTimeEdit/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <value>
+                                    <date/>
+                                 </value>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.TERMIN_ZRUSENI"/>
+                                 <format>
+                                    <picture>date{01.01.2024}</picture>
+                                 </format>
+                              </field>
+                              <field minH="4.528mm" name="Cell17">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.RESENI_NAVRH"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell18">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.CINNOSTI"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell19">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.PROCENT"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell20">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.OPATRENI"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell21">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.OPATRENI_DETAIL"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell22">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.ZAHAJENI_PROJEDNANI"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell23">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.DOPLN_INF"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell24">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.STAV_PROJEDNANI_FM"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell25">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.NAVRH_ZRUSENI_FM"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell26">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.ODSOUHL_RESENI"/>
+                              </field>
+                              <field minH="4.528mm" name="Cell27">
+                                 <ui>
+                                    <textEdit multiLine="1"/>
+                                 </ui>
+                                 <font size="4pt" typeface="Verdana"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge/>
+                                    <corner thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.UKONCENI_PROJ"/>
+                              </field>
+                              <border>
+                                 <edge/>
+                                 <corner thickness="0.176mm"/>
+                              </border>
+                              <bind match="dataRef" ref="$.DATA[*]"/>
+                              <occur max="-1" min="0"/>
+                              <?templateDesigner expand 1?></subform>
+                           <keep intact="contentArea"/>
+                           <bind match="dataRef" ref="$.ITEMS"/>
+                           <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                           <?templateDesigner expand 1?></subform>
+                        <border>
+                           <edge presence="hidden"/>
+                        </border>
+                        <bind match="none"/>
+                        <?templateDesigner expand 1?></subform>
+                     <bind match="none"/>
+                     <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                     <?templateDesigner expand 1?></subform>
+                  <bind match="dataRef" ref="$.DATA[*]"/>
+                  <occur max="-1" min="0"/>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">8.2.3.4195.1.572397.541997</text>
+      </desc>
+      <event activity="docReady" name="event__docReady" ref="$host">
+         <script contentType="application/x-javascript">
+event.target.viewState = { pageViewLayoutMode:2 }; //Set form scrolling
+
+if (!app.runtimeHighlight){
+    app.runtimeHighlight = true;
+   
+}
+</script>
+      </event>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <proto>
+         <subform name="designer__stylesheet">
+            <draw h="5mm" minW="0mm" name="TextStyle1">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Verdana" weight="bold">
+                  <fill>
+                     <color value="255,255,255"/>
+                  </fill>
+               </font>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para hAlign="center" vAlign="middle"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.1778mm"/>
+                  <fill>
+                     <color value="192,192,192"/>
+                  </fill>
+               </border>
+            </draw>
+         </subform>
+      </proto>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Verdana" 0 0 UTF-16 2 60 00030006001100120013001400150029003700470048004C004F0057005B?>
+      <?renderCache.subset "Verdana" 1 0 UTF-16 2 244 000300080010001100120024002700280029002B002D002E002F003000310032003300350036003700380039003D004400450046004700480049004A004B004C004D004E004F005000510052005300550056005700580059005C005D006500690070007400CB00D200E200E300FD00FE010C0116011B011C0124?></subform>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.6/?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner RenderingEngineCache 0?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt server?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultCaptionFontSettings face:Verdana;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Verdana;size:10;weight:normal;style:normal?>
+   <?templateDesigner Grid show:1, snap:1, units:1, color:ff8080, origin:(0,0), interval:(50000,50000), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner FormTargetVersion 30?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 25?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>https://SK2.SAP-APP.SKODA.VWG:443/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>5</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="SkodaProOffice" typeface="Skoda Pro Office" weight="normal"/>
+      <font posture="normal" psName="SkodaProOffice-Bold" typeface="Skoda Pro Office" weight="bold"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZHR_DPO_FORM_A004">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-connection-set/2.4/?></connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <SFPSY>
+            <DATE/>
+            <TIME/>
+            <USERNAME/>
+            <SUBRC/>
+         </SFPSY>
+         <IT_ITEMS dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <ITEM_TYPE_INDEX/>
+               <ITEM_TYPE_TEXT/>
+               <ITEMS dd:minOccur="0">
+                  <DATA dd:maxOccur="-1">
+                     <ITEM_INDEX/>
+                     <UTVAR/>
+                     <STREDISKO/>
+                     <FM/>
+                     <KM/>
+                     <NAZEV_POZICE/>
+                     <PROFESE/>
+                     <JMENO_PRIJMENI/>
+                     <PERNR/>
+                     <NAROZENI/>
+                     <NASTUP/>
+                     <VZDELANI/>
+                     <SENIOR/>
+                     <ZP/>
+                     <NAROK_NA_DUCHOD/>
+                     <TERMIN_ZRUSENI/>
+                     <RESENI_NAVRH/>
+                     <CINNOSTI/>
+                     <PROCENT/>
+                     <OPATRENI/>
+                     <OPATRENI_DETAIL/>
+                     <ZAHAJENI_PROJEDNANI/>
+                     <DOPLN_INF/>
+                     <STAV_PROJEDNANI_FM/>
+                     <NAVRH_ZRUSENI_FM/>
+                     <ODSOUHL_RESENI/>
+                     <UKONCENI_PROJ/>
+                  </DATA>
+               </ITEMS>
+            </DATA>
+         </IT_ITEMS>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-locale-set/2.6/?></localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c041 52.337767, 2008/04/13-15:41:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2024-05-20T11:23:41Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:bf21c3bb-f21e-49a8-a31e-f9edf707b535</xmpMM:DocumentID>
+         <pdfuaid:part>1</pdfuaid:part>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>8.2.3.4195.1.572397.541997</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>
