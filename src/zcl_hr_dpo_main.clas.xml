@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_HR_DPO_MAIN</CLSNAME>
+    <LANGU>C</LANGU>
+    <DESCRIPT>Projednávavaní z odbory</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CURRENT_PROCOTOL</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Načti aktuálni stav</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>INIT_FORM_DATA</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Init data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SAVE_AS_DRAFT</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Ulož jako draft</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_FINAL</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Odešli finální program</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Odešli mail</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_PROPOSAL</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Odešli návrh programu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_TO_TASKMANAGER</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Odešli do Task Manageru</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_TO_UNI</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Odešli do UniProcess</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT_FORM_DATA</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Návratová tabulka</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT_FORM_DATA</CMPNAME>
+     <SCONAME>IV_UNAME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Jméno uživatele</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

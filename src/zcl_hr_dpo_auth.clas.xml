@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_HR_DPO_AUTH</CLSNAME>
+    <LANGU>C</LANGU>
+    <DESCRIPT>Třída pro práci s autorizací - tcode ZHR_DPO_CUST</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vytvori instanci tridy, pokud priloha neexistuje, vytvori no</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_A004_SHOW_EMPS_GROUP_ALL</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>A004 tab.zam. - všichni</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_A004_SHOW_EMPS_GROUP_ORG_JE</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>A004 tab.zam. - podle org.jed.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_A004_SHOW_EMPS_GROUP_TAB_BP</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>A004 tab.zam. - podle tabulky ZHR_DPO_BP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vrati instanci tridy, pokud priloha neexistuje, vytvori</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_AUTH_STR_CENTR</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vrátí auth strukturu pro centrálu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_REQ_A004_PDF_SHOW</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Lze zobrazit př. č.4 PDF?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_REQ_A004_SHOW_EMPS_GROUP</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Jakou skupinu uživatelů může vidět</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_REQ_A004_STRUC_BY_ROLE</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vrátí všechny PERNR, které může uživatel &quot;vidět&quot; podle org.s</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_PRAVA</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Zástupováni žádosti</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_PRAVA_ZASTUP</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tab.str.oprávnení v zastupu daného zaměstnance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_ZASTUP</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Zastupy</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_SYUNAME</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Jméno uživatele přihlášeného</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_UNAME</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Jméno uživatele kterého zastupuje</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_ZASTUP_JEDEN</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Všeobecný příznak</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_ZASTUP_VSE</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Všeobecný příznak</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PROCESS_P_CENTR</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Proces - centrála</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PROCESS_P_DOHODA</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Proces - dohoda</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RIGHTS_X</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Práva - povoleno pro všechny žádosti</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_ZASTUPU_SCHVALOVANI</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Typ zastupu - schvalovani</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_ZASTUPU_VSE</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Typ zastupu - schvalovani</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_NACTI_VSECHNY_ZASTUPY</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Nacti vsechny zastupy</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_UNAME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>uname</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>ZCX_HR_DPO_AUTH</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Trída vyjímek pro AUTH</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>EV_RESULT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Všeobecný příznak</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_NACTI_VSECHNY_ZASTUPY</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Všeobecný příznak</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_UNAME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Uname</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>RO_ME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Auth obj</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_PDF_SHOW</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_PDF_SHOW</CMPNAME>
+     <SCONAME>RV_VALID</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Právo k PDF prilohy c.4</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_SHOW_EMPS_GROUP</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_SHOW_EMPS_GROUP</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_SHOW_EMPS_GROUP</CMPNAME>
+     <SCONAME>IV_UNAME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Jméno uživatele</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_SHOW_EMPS_GROUP</CMPNAME>
+     <SCONAME>RV_SHOW_EMPS_GROUP</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Skupiny pro zobrazení zaměstnanců</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_STRUC_BY_ROLE</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_STRUC_BY_ROLE</CMPNAME>
+     <SCONAME>ET_OBJEC</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka struc</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_STRUC_BY_ROLE</CMPNAME>
+     <SCONAME>ET_SHOW_ONLY_PERNR</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka zaměstnanců</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_STRUC_BY_ROLE</CMPNAME>
+     <SCONAME>EV_SHOW_ALL</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Může vidět všechny zaměstnance</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_STRUC_BY_ROLE</CMPNAME>
+     <SCONAME>IV_CREATE_DATE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Datum ve formátu CHAR</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REQ_A004_STRUC_BY_ROLE</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

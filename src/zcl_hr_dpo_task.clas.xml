@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_HR_DPO_TASK</CLSNAME>
+    <LANGU>C</LANGU>
+    <DESCRIPT>Úkoly k termínům</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DELETE_TASK</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Smaž úkol</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Založ třídu úkolu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TASK</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Načti úkol</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TASK_LIST</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Načti seznam tasků</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TASK_STATUS_LIST</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka statusu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SAVE</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Ulož úkol</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_TASK</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_TASK</CMPNAME>
+     <SCONAME>IV_DPO_TASK</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Úkol</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_TASK</CMPNAME>
+     <SCONAME>RS_RETURN</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Návratová struktura</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_DPO_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>RO_TASK</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Úkoly k termínům</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TASK</CMPNAME>
+     <SCONAME>IV_DPO_TASK</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Úkol</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TASK</CMPNAME>
+     <SCONAME>RS_TASK</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Struktura pro úkoly</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TASK_LIST</CMPNAME>
+     <SCONAME>RT_TASKS</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Seznam tasků</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TASK_STATUS_LIST</CMPNAME>
+     <SCONAME>RT_STATUS_LIST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Statusy RFP</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE</CMPNAME>
+     <SCONAME>ER_RETURN</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Struktura pro úkoly</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE</CMPNAME>
+     <SCONAME>EV_RESULT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Návratová struktura</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE</CMPNAME>
+     <SCONAME>IS_TASK</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Struktura pro úkoly</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

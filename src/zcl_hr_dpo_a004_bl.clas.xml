@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_HR_DPO_A004_BL</CLSNAME>
+    <LANGU>C</LANGU>
+    <DESCRIPT>Obsluzna trida pro prilohy c.4</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_UPDATE_ITEM</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Prida nebo aktualizuje polozku prilohy c. 4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_OR_GET</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vytvori zadost do DB a vrati informaci o vytvoreni</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DELETE_ITEM</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Smaže položku přílohy č.4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_COMPLETE</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Povinnost přílohy č. 4 splněná?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_EMP_DETAIL</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vrati FM podle PERNR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ITEM</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vrati polozku prilohy c.4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ITEMS</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vrati polozky prilohy c.4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PDF_STREAM</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vratí PDF verzi přílohy č. 4</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_UPDATE_ITEM</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_UPDATE_ITEM</CMPNAME>
+     <SCONAME>EV_RESULT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Booleovská proměnná (X=true, -=false, space=unknown)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_UPDATE_ITEM</CMPNAME>
+     <SCONAME>IS_A004_I_ITEM</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Struktura pro nepovinne polozky prilohy c. 4</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_UPDATE_ITEM</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_UPDATE_ITEM</CMPNAME>
+     <SCONAME>RS_A004_I</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Žádost - příloha č. 4 - položka</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_OR_GET</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_OR_GET</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_OR_GET</CMPNAME>
+     <SCONAME>IV_UNAME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Systémové pole ABAP: Jméno aktuálního uživatele</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_OR_GET</CMPNAME>
+     <SCONAME>RS_A004</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ZHR_DPO_A004 GW</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_ITEM</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_ITEM</CMPNAME>
+     <SCONAME>IV_ATTACHEMENT_ITEM</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID položky přílohy</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_ITEM</CMPNAME>
+     <SCONAME>IV_ATTACH_ITEM_TYPE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Žádost - příloha č. 4 - typ řádku - klíč</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_ITEM</CMPNAME>
+     <SCONAME>IV_PERNR</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Osobní číslo</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_ITEM</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_ITEM</CMPNAME>
+     <SCONAME>IV_VERSION</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Verze objektu</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_COMPLETE</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_COMPLETE</CMPNAME>
+     <SCONAME>RV_COMPLETED</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Je splněná povinnost přílohy č.4?</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_EMP_DETAIL</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_EMP_DETAIL</CMPNAME>
+     <SCONAME>IV_PERNR</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Osobní číslo</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_EMP_DETAIL</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_EMP_DETAIL</CMPNAME>
+     <SCONAME>RS_A004_FM</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Funkční místo / zaměstnanec struktura pro PDF export</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEM</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEM</CMPNAME>
+     <SCONAME>IV_ATTACHEMENT_ITEM</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID položky přílohy</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEM</CMPNAME>
+     <SCONAME>IV_ATTACH_ITEM_TYPE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Žádost - příloha č. 4 - typ řádku - klíč</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEM</CMPNAME>
+     <SCONAME>IV_PERNR</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Standard.výběr pro reporting kmenových dat HR</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEM</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEM</CMPNAME>
+     <SCONAME>IV_UNAME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Systémové pole ABAP: Jméno aktuálního uživatele</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEM</CMPNAME>
+     <SCONAME>IV_VERSION</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Verze objektu</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEM</CMPNAME>
+     <SCONAME>RS_ITEM</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka polozek prilohy cislo 4</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEMS</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEMS</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEMS</CMPNAME>
+     <SCONAME>IV_UNAME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Systémové pole ABAP: Jméno aktuálního uživatele</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEMS</CMPNAME>
+     <SCONAME>IV_VERSION</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Verze objektu</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ITEMS</CMPNAME>
+     <SCONAME>RT_ITEMS</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka polozek prilohy cislo 4</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PDF_STREAM</CMPNAME>
+     <SCONAME>ET_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PDF_STREAM</CMPNAME>
+     <SCONAME>IV_NACTI_VSECHNY_ZASTUPY</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Všeobecný příznak</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PDF_STREAM</CMPNAME>
+     <SCONAME>IV_REQUEST</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PDF_STREAM</CMPNAME>
+     <SCONAME>IV_UNAME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Systémové pole ABAP: Jméno aktuálního uživatele</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PDF_STREAM</CMPNAME>
+     <SCONAME>RT_STREAM</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka polozek prilohy cislo 4</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

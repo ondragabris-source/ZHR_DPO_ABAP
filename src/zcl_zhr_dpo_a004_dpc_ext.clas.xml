@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_ZHR_DPO_A004_DPC_EXT</CLSNAME>
+    <LANGU>C</LANGU>
+    <DESCRIPT>Sekundäre Datenanbieterklasse</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_UNAME</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Vrátí zástup pokud existuje</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>NO_CACHE</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Avoid caching data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_MESSAGES</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Pošle zprávy do oDat</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_UNAME</CMPNAME>
+     <SCONAME>IV_REQUEST_URI</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>HTTP Framework (iHTTP) HTTP Wert</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_UNAME</CMPNAME>
+     <SCONAME>RV_UNAME</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Systémové pole ABAP: Jméno aktuálního uživatele</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MESSAGES</CMPNAME>
+     <SCONAME>/IWBEP/CX_MGW_BUSI_EXCEPTION</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Business Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MESSAGES</CMPNAME>
+     <SCONAME>IT_MESSAGE</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Tabulka s návratovými informacemi BAPI</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
