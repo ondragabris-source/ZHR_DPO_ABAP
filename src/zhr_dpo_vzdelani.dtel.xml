@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZHR_DPO_VZDELANI</ROLLNAME>
+    <DDLANGUAGE>C</DDLANGUAGE>
+    <DOMNAME>TEXT70</DOMNAME>
+    <HEADLEN>08</HEADLEN>
+    <SCRLEN1>08</SCRLEN1>
+    <SCRLEN2>08</SCRLEN2>
+    <SCRLEN3>08</SCRLEN3>
+    <DDTEXT>Vzdělání</DDTEXT>
+    <REPTEXT>Vzdělání</REPTEXT>
+    <SCRTEXT_S>Vzdělání</SCRTEXT_S>
+    <SCRTEXT_M>Vzdělání</SCRTEXT_M>
+    <SCRTEXT_L>Vzdělání</SCRTEXT_L>
+    <DTELMASTER>C</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>
