@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Zobraz PDF</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZHR_DPO_PREVIEW_PDFTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZHR_DPO_PREVIEW_PDF</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_DPO_PREVIEW_PDF</FUNCNAME>
+     <SHORT_TEXT>PDF print preview</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_FORM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FPNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_DPO_REQUEST</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZHR_DPO_REQUEST</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_PDF_STREAM</PARAMETER>
+       <TYP>FPCONTENT</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ES_FORMOUTPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FPFORMOUTPUT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ZCX_SD_SDP_MAIN</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_FORM</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_DPO_REQUEST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ID žádosti</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_PDF_STREAM</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_FORMOUTPUT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ZCX_SD_SDP_MAIN</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+     <EXCEPTION_CLASSES>X</EXCEPTION_CLASSES>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

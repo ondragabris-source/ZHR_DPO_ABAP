@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TTYP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD40V>
+    <TYPENAME>ZHR_DPO_PRAVA_ZASTUP_T</TYPENAME>
+    <DDLANGUAGE>C</DDLANGUAGE>
+    <ROWTYPE>ZHR_DPO_PRAVA_ZASTUP_S</ROWTYPE>
+    <ROWKIND>S</ROWKIND>
+    <DATATYPE>STRU</DATATYPE>
+    <ACCESSMODE>H</ACCESSMODE>
+    <KEYDEF>K</KEYDEF>
+    <KEYKIND>U</KEYKIND>
+    <KEYFDCOUNT>0002</KEYFDCOUNT>
+    <DDTEXT>Prava zastupy</DDTEXT>
+   </DD40V>
+   <DD42V>
+    <DD42V>
+     <TYPENAME>ZHR_DPO_PRAVA_ZASTUP_T</TYPENAME>
+     <KEYFDPOS>0001</KEYFDPOS>
+     <ROWTYPEPOS>0057</ROWTYPEPOS>
+     <KEYFIELD>CREATOR</KEYFIELD>
+    </DD42V>
+    <DD42V>
+     <TYPENAME>ZHR_DPO_PRAVA_ZASTUP_T</TYPENAME>
+     <KEYFDPOS>0002</KEYFDPOS>
+     <ROWTYPEPOS>0058</ROWTYPEPOS>
+     <KEYFIELD>DEPUTY</KEYFIELD>
+    </DD42V>
+   </DD42V>
+  </asx:values>
+ </asx:abap>
+</abapGit>
