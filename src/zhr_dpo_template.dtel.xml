@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZHR_DPO_TEMPLATE</ROLLNAME>
+    <DDLANGUAGE>C</DDLANGUAGE>
+    <DOMNAME>ZHR_DPO_TEMPLATE</DOMNAME>
+    <HEADLEN>07</HEADLEN>
+    <SCRLEN1>07</SCRLEN1>
+    <SCRLEN2>07</SCRLEN2>
+    <SCRLEN3>07</SCRLEN3>
+    <DDTEXT>Šablona</DDTEXT>
+    <REPTEXT>Šablona</REPTEXT>
+    <SCRTEXT_S>Šablona</SCRTEXT_S>
+    <SCRTEXT_M>Šablona</SCRTEXT_M>
+    <SCRTEXT_L>Šablona</SCRTEXT_L>
+    <DTELMASTER>C</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NROB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <OBJECT>ZHR_DPO_T</OBJECT>
+    <DOMLEN>ZHR_DPO_ID_TERM</DOMLEN>
+    <PERCENTAGE>1.0</PERCENTAGE>
+   </ATTRIBUTES>
+   <TEXT>
+    <LANGU>C</LANGU>
+    <OBJECT>ZHR_DPO_T</OBJECT>
+    <TXT>Číslo termínu k projednáni s odbory</TXT>
+    <TXTSHORT>Číslo termínu</TXTSHORT>
+   </TEXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>
