@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SWOTDV>
+    <SWOTDV>
+     <OBJTYPE>ZHR_DPO</OBJTYPE>
+     <VERB>DPOREQUEST</VERB>
+     <VERBTYPE>K</VERBTYPE>
+     <CREA_REL>754</CREA_REL>
+     <EDITORDER>0001</EDITORDER>
+     <EDITELEM>DpoRequest</EDITELEM>
+     <REFTYPE>D</REFTYPE>
+     <REFSTRUCT>ZHR_DPO_ZAD</REFSTRUCT>
+     <REFFIELD>DPO_REQUEST</REFFIELD>
+     <ELEMTYPE>E</ELEMTYPE>
+    </SWOTDV>
+   </SWOTDV>
+   <SWOTOL>
+    <SWOTOL>
+     <OBJTYPE>ZHR_DPO</OBJTYPE>
+     <AREA>*ROOT</AREA>
+     <AREACLASS>04</AREACLASS>
+     <MAINENTRY>X</MAINENTRY>
+    </SWOTOL>
+   </SWOTOL>
+   <SWOTTV>
+    <SWOTTV>
+     <OBJTYPE>ZHR_DPO</OBJTYPE>
+     <LANGUAGE>C</LANGUAGE>
+     <VERB>DPOREQUEST</VERB>
+     <DESCRIPT>ID žádosti</DESCRIPT>
+     <SHORTTEXT>ID žádosti</SHORTTEXT>
+    </SWOTTV>
+   </SWOTTV>
+   <TOJTB>
+    <TOJTB>
+     <NAME>ZHR_DPO</NAME>
+     <ACTIVE>X</ACTIVE>
+     <ACTIVELANG>C</ACTIVELANG>
+     <PROGNAME>ZHR_DPO_PRG</PROGNAME>
+     <EDITELEM>ZHR_DPO</EDITELEM>
+     <EPRIMETHOD>Display</EPRIMETHOD>
+     <APPLIC>H</APPLIC>
+     <CREA_REL>754</CREA_REL>
+     <CHAN_REL>754</CHAN_REL>
+     <VERSION>754</VERSION>
+     <OBJTYPECLS>01</OBJTYPECLS>
+     <KEYLENGTH>10</KEYLENGTH>
+    </TOJTB>
+   </TOJTB>
+   <TOJTT>
+    <TOJTT>
+     <NAME>ZHR_DPO</NAME>
+     <LANGUAGE>C</LANGUAGE>
+     <NTEXT>BOR pro DPO</NTEXT>
+     <STEXT>ZHR_DPO</STEXT>
+    </TOJTT>
+   </TOJTT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

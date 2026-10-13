@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_ZHR_DPO_REQUEST_UN_DPC_EXT</CLSNAME>
+    <LANGU>C</LANGU>
+    <DESCRIPT>Sekundäre Datenanbieterklasse</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>AGREEMENTDATASET_GET_ENTITY</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Zug. EntitätsmengName:  AgreementSet</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>AGREEMENTDATASET_GET_ENTITYSET</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Zug. EntitätsmengName:  AgreementSet</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>AUTHSTRUCSET_GET_ENTITY</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Zug. EntitätsmengName:  AuthStrucSet</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>AGREEMENTDATASET_GET_ENTITY</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (EntitySet)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AGREEMENTDATASET_GET_ENTITYSET</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (EntitySet)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AUTHSTRUCSET_GET_ENTITY</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (Entity)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEPUTYSET_GET_ENTITYSET</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (EntitySet)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEPUTYSET_GET_ENTITYSET</CMPNAME>
+     <SCONAME>IV_FILTER_STRING</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (Entity)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>OTHERAPPROVERSSE_GET_ENTITYSET</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (EntitySet)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REQHISTORYSET_GET_ENTITYSET</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (EntitySet)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REQUESTATTCHDIRS_GET_ENTITYSET</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (EntitySet)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REQUESTDATASET_GET_ENTITY</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (Entity)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REQUESTDATASET_GET_ENTITYSET</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (EntitySet)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>TEMPLATESET_GET_ENTITYSET</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (EntitySet)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>THEMESET_GET_ENTITYSET</CMPNAME>
+     <SCONAME>ES_RESPONSE_CONTEXT</SCONAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Feed request response information (EntitySet)</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

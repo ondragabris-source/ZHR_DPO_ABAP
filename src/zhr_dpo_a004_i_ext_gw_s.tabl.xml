@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZHR_DPO_A004_I_EXT_GW_S</TABNAME>
+    <DDLANGUAGE>C</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>DPO - žádosti - příloha č. 4 - pro PDF - gw</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZHR_DPO_A004_I</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Žádost - příloha č. 4 - položka</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>.INCLU-_01</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZHR_DPO_CA004IT</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Žádost - příloha č. 4 - typ řádku - klíč</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+     <GROUPNAME>ITEM_TYPE</GROUPNAME>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>.INCLU-_02</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <REFTABLE>SPRAS</REFTABLE>
+     <PRECFIELD>ZHR_DPO_CA004ITT</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Žádost - příloha č. 4 - typ řádku - popis</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+     <GROUPNAME>ITEM_TYPE_TEXT</GROUPNAME>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>.INCLU-_03</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZHR_DPO_A004_FM_EXT_S</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Funkční místo / zaměstnanec struktura pro PDF export</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+     <GROUPNAME>FM</GROUPNAME>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ITEM_TYPE_INDEX</FIELDNAME>
+     <ROLLNAME>ZHR_DPO_ITEM_TYPE_INDEX</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

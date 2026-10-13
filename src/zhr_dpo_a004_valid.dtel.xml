@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZHR_DPO_A004_VALID</ROLLNAME>
+    <DDLANGUAGE>C</DDLANGUAGE>
+    <DOMNAME>FLAG</DOMNAME>
+    <HEADLEN>17</HEADLEN>
+    <SCRLEN1>09</SCRLEN1>
+    <SCRLEN2>17</SCRLEN2>
+    <SCRLEN3>17</SCRLEN3>
+    <DDTEXT>Je splněná povinnost přílohy č.4?</DDTEXT>
+    <REPTEXT>Povinnost splněna</REPTEXT>
+    <SCRTEXT_S>Povinnost</SCRTEXT_S>
+    <SCRTEXT_M>Povinnost splněna</SCRTEXT_M>
+    <SCRTEXT_L>Povinnost splněna</SCRTEXT_L>
+    <DTELMASTER>C</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

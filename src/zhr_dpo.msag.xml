@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZHR_DPO</ARBGB>
+    <MASTERLANG>C</MASTERLANG>
+    <STEXT>Třída zpráv pro DPO</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Chyba při odesílání Žádosti &amp;1 do Task Manageru</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Nebyla identifikována žádná role pro &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Chybí customizace pro roli &amp;1 v tabulce ZHR_DPO_CPRAVA</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Nebyla identifikována role uživatele &amp;1 pro žádost &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Pro žadatele &amp;1 nebyla identifikována žádna Organizační jednotka</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Pro Organizační jednotku &amp;1 nebyl identifikován BP.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Záznam už existuje</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>K personálnímu číslu &amp;1 není přirazený sap uživatel.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Příloha smazána</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Pro Osobní číslo &amp;1 nebyl nalezen uživatel</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Nebyl vybrán typ zástupu</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Záznam pro zástupce &amp;1 už existuje.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Záznam by zmazán.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>Typ přílohy &amp;1  není podporován. Ukládaní selhalo.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>Nenašel se užívatel pro roli &amp;1. Zkontrolujte tabulku ZHR_DPO_CAUTH</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>Žádost &amp;1 byla smazána.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>Neexistuje volný termín pro žádost &amp;1. Termín nesmazán.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>018</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>Nelze načíst A004 položka id &amp;1, attachment &amp;2, type &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>Nemohu nacist vstupni data: &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>Nelze ulozit do ZHR_DPO_A004_I, chyba &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>Nenalezen typ polozky &amp;1 pro prilohu A004</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>Nenalezena zadost &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Nemáte autorizaci na spuštění programu.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>Příloha &amp;1 se stejným názvem už k danému objektu existuje.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>Nemáte autorizaci k žádosti &amp;1.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>Stav žádosti č.&amp;1 jiný, než: ROJ, RDO, RAOJ neumožňuje editaci rozš. polí</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>Uživatel &amp;1 nemá právo videt PDF</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>Vyplňte povinnou přílohu</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>Uživatel &amp;1 nemůže zast.už. &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>Chyba práv: &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>Uživatel &amp;1 zastupujici &amp;2 typu &amp;3 nemá právo videt PDF</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>033</MSGNR>
+     <TEXT>Ani uzivatel &amp;1 ani zastupujici uzivatele nemaji pravo videt PDF</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>034</MSGNR>
+     <TEXT>Vyberte pouze jednu roli.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>Interní číslo žádosti a jméno příjemce musí být vyplneny společně</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>C</SPRSL>
+     <ARBGB>ZHR_DPO</ARBGB>
+     <MSGNR>036</MSGNR>
+     <TEXT>Žádost &amp;1 byla stornována.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>
