@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>ZHR_DPO_BP</OBJECTNAME>
+    <OBJECTTYPE>S</OBJECTTYPE>
+    <CLIDEP>X</CLIDEP>
+    <OBJCATEG>APPL</OBJCATEG>
+    <OBJTRANSP>2</OBJTRANSP>
+    <IMPORTABLE>3</IMPORTABLE>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>C</LANGUAGE>
+    <OBJECTNAME>ZHR_DPO_BP</OBJECTNAME>
+    <OBJECTTYPE>S</OBJECTTYPE>
+    <DDTEXT>Vazba na BP</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>ZHR_DPO_BP</OBJECTNAME>
+     <OBJECTTYPE>S</OBJECTTYPE>
+     <TABNAME>ZHR_DPO_BP</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>ZHR_DPO_BP</TABNAME>
+     <CCLASS>YH1F</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>ZHR_DPO_BP</TABNAME>
+     <AREA>ZHR_DPO_BP</AREA>
+     <TYPE>1</TYPE>
+     <LISTE>9001</LISTE>
+     <BASTAB>X</BASTAB>
+     <FLAG>X</FLAG>
+    </TVDIR>
+    <TVIMF>
+     <TVIMF>
+      <TABNAME>ZHR_DPO_BP</TABNAME>
+      <EVENT>05</EVENT>
+      <FORMNAME>ZHR_UPDATE_INFO</FORMNAME>
+     </TVIMF>
+     <TVIMF>
+      <TABNAME>ZHR_DPO_BP</TABNAME>
+      <EVENT>10</EVENT>
+      <FORMNAME>ZHR_DPO_BP_SORT</FORMNAME>
+     </TVIMF>
+     <TVIMF>
+      <TABNAME>ZHR_DPO_BP</TABNAME>
+      <EVENT>21</EVENT>
+      <FORMNAME>ZHR_UPDATE_FIELD</FORMNAME>
+     </TVIMF>
+     <TVIMF>
+      <TABNAME>ZHR_DPO_BP</TABNAME>
+      <EVENT>26</EVENT>
+      <FORMNAME>ZHR_DPO_BP_SORT</FORMNAME>
+     </TVIMF>
+    </TVIMF>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>
